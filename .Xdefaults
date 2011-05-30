@@ -1,0 +1,67 @@
+Xft.dpi: 96
+!xterm
+xterm*geometry: 85x30
+xterm*utf8: 1
+xterm*utf8Title: 1
+xterm*cjkWidth: 0
+xterm*faceName: DejaVu Sans Mono:pixelsize=13
+xterm*faceNameDoublesize: wenquanyi bitmap song:pixelsize=13
+xterm*metaSendsEscape: 1
+xterm*cursorBlink:True
+
+xterm*background: #323232
+xterm*foreground: #eeeeec
+xterm*color0: #2e3436
+xterm*color1: #cc0000
+xterm*color2: #4e9a06
+xterm*color3: #c4a000
+xterm*color4: #3465a4
+xterm*color5: #75507b
+xterm*color6: #0b939b
+xterm*color7: #d3d7cf
+xterm*color8: #555753
+xterm*color9: #ef2929
+xterm*color10: #8ae234
+xterm*color11: #fce94f
+xterm*color12: #729fcf
+xterm*color13: #ad7fa8
+xterm*color14: #00f5e9
+xterm*color15: #eeeeec
+
+!urxvt
+URxvt.geometry: 85x30
+URxvt.font: 	xft:DejaVu Sans Mono:pixelsize=13, \
+                xft:wenquanyi bitmap song:pixelsize=14
+URxvt.boldFont: xft:DejaVu Sans Mono:bold:autohint=True:pixelsize=13, \
+	        xft:wenquanyi bitmap song:bold:pixelsize=14
+URxvt.cjkwidth: 0		    	   
+URxvt.utf8Title: true
+Rxvt.letterspace:0
+Rxvt.lineSpace:1
+URxvt.blurRadius: 60
+URxvt.borderLess: False
+URxvt.preeditType:Root
+URxvt.scrollBar:False
+URxvt.cursorBlink:True
+
+URxvt*background: #323232
+URxvt*foreground: #eeeeec
+URxvt*color0: #2e3436
+URxvt*color1: #cc0000
+URxvt*color2: #4e9a06
+URxvt*color3: #c4a000
+URxvt*color4: #3465a4
+URxvt*color5: #75507b
+URxvt*color6: #0b939b
+URxvt*color7: #d3d7cf
+URxvt*color8: #555753
+URxvt*color9: #ef2929
+URxvt*color10: #8ae234
+URxvt*color11: #fce94f
+URxvt*color12: #729fcf
+URxvt*color13: #ad7fa8
+URxvt*color14: #00f5e9
+URxvt*color15: #eeeeec
+
+!emacs
+Emacs.geometry: 85x40

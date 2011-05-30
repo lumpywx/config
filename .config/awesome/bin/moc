@@ -1,0 +1,9 @@
+#!/bin/sh
+
+res=`pgrep -u $USER -x mocp`
+if [ $res ]; then
+    mocp -x
+else
+    mocp -S
+    mocp -p
+fi

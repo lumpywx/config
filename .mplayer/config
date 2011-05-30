@@ -1,0 +1,12 @@
+# Write your default config options here!
+unicode=1
+slang=zh
+#zoom=1
+stop-xscreensaver=1
+subfont-autoscale=1
+subfont-text-scale=7
+vo=xv
+ao=alsa
+fs=1
+subcp=cp936
+font=SimHei

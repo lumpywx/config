@@ -1,0 +1,30 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.15:$
+Arch:x86-gcc3:$
+
+[PLUGINS]
+libflashplayer.so:$
+/usr/lib/mozilla/plugins/libflashplayer.so:$
+:$
+1305647920000:1:1:$
+Shockwave Flash 10.3 r181:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
+1:application/futuresplash:FutureSplash Player:spl:$
+nppdf.so:$
+/usr/lib/acroread/Browser/intellinux/nppdf.so:$
+:$
+1297771504000:1:1:$
+The Adobe Reader plugin is used to enable viewing of PDF and FDF files from within the browser. :$
+Adobe Reader 9.4:$
+5
+0:application/pdf:Portable Document Format:pdf:$
+1:application/vnd.fdf:Acrobat Forms Data Format:fdf:$
+2:application/vnd.adobe.xfdf:XML Version of Acrobat Forms Data Format:xfdf:$
+3:application/vnd.adobe.xdp+xml:Acrobat XML Data Package:xdp:$
+4:application/vnd.adobe.xfd+xml:Adobe FormFlow99 Data File:xfd:$
+
+[INVALID]

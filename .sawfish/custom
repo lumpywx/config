@@ -1,0 +1,6 @@
+;; Sawfish user customization -- do not edit by hand!
+;; Use the configurator instead.
+;; sawfish version 1.8.1, written Sun May 29 19:31:08 2011
+
+(custom-set-typed-variable (quote default-frame-style) (quote Elberg-tabbed) (quote frame-style))
+(custom-set-typed-variable (quote workspace-names) (quote ("dev" "www" "fun" "etc")) (quote (list string "Workspace names")))

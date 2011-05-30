@@ -1,0 +1,30 @@
+#键绑定
+escape ^L^L
+bind 2 split
+bind o focus
+bind 1 only
+bind 0 remove
+
+#警告音
+vbell off
+#启动信息
+startup_message off
+# screen里面的所有进程退出，screen就自动退出
+autodetach on
+# 回滚行数
+defscrollback 1000
+# 退出终端程序，比如vi,mocp后走开刷新
+altscreen on
+#nethack style messages
+nethack on
+#utf-8 handling
+defutf8 on
+attrcolor b ".I"
+#title
+shelltitle '$ |bash'
+#状态栏
+caption always "%{.kB}%-w%{..M}%n %t%{-}%+w %=%{..B} %{..B} %Y/%m/%d %c  "
+
+#默认开启两个标签
+screen
+screen

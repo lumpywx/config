@@ -1,0 +1,17 @@
+# moc config by lumpy
+ReadTags     = 	no
+MusicDir     =	"/home/lumpy/music"
+sort	     =	FileName
+Repeat	     =	yes
+Shuffle	     =	yes
+AutoNext     = 	yes
+SoundDriver  = ALSA, OSS
+ShowHiddenFiles	     =	no
+HideFileExtension    =	yes
+ShowFormat	     =		no	
+ShowTime	     = 	IfAvailable
+SavePlaylist	     = 	yes
+SyncPlaylist	     =	yes
+Theme		     =	moca_theme
+FollowPlayedFile     =	yes
+CanStartInPlaylist   =	yes

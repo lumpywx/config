@@ -1,0 +1,64 @@
+;;--------------------func--------------------
+;;运行命令
+(defun wzlxx-run (cmd)
+  "Run a command in a new process. And let it start in
+background. Without stop the current WM execution"
+  (interactive)
+  (system 
+   (if (string-match ".*&\\s*$" cmd)
+       cmd
+       (concat cmd " &"))))
+;;require 
+(defun require-try (#!rest args)
+  "require-try is write to replace require, if there has no a mode, it will
+not interrupted, but return a nil"
+  (let ((result t))
+    (mapc
+     (lambda (e)
+       (condition-case err
+           (cond ((stringp e) (load-file e))
+                 ((symbolp e) (require e))
+                 (t (format standard-output
+                            "Invalid arg to require-try: %s" e)
+                    (setq result nil)))
+       (file-error
+        (format standard-output "Couldn't load extension: %s" e)
+        (setq result nil))))
+     args)
+    result))
+;;--------------------func-end--------------------
+
+
+;;--------------------autostart--------------------
+(define wzlxx-startup-programs
+  '(("feh" "--bg-scale" "/home/lumpy/picture/bg.png")
+    ("/home/lumpy/.yong/yong" "-d")))
+ 
+
+(mapc (lambda (program)
+        (apply start-process (make-process standard-output) program))
+      wzlxx-startup-programs)
+
+(add-hook 'before-exit-hook
+          (lambda ()
+            (mapc stop-process (active-processes))))
+;;--------------------autostart end--------------------
+
+;;--------------------keybinding--------------------
+(when (require-try 'jump-or-exec)
+  (bind-keys global-keymap
+	     "W-TAB"          'cycle-windows
+	     "C-TAB"          'cycle-windows-backwards
+	     "C-W-e"          'display-errors
+	     "C-Super-r"      'restart
+	     "Super-Shift-q"  'quit
+	     "Super-w"        'popup-window-menu
+	     "Super-l"        '(wzlxx-run "slock &")
+   	     "Super-Up"       '(wzlxx-run "/home/lumpy/.config/awesome/bin/moc &")
+	     "Super-Down"     '(wzlxx-run "mocp -t n &")
+	     "Super-Left"     '(wzlxx-run "mocp -G &")
+	     "Super-Right"    '(wzlxx-run "mocp -f &")
+	     "Super-Return"   '(wzlxx-run "/home/lumpy/.bin/rxvt &")
+	     "Super-e"	      '(wzlxx-run "emacsclient -nc -a '' &")
+	     "Super-q" `(jump-or-exec "Firefox$" "firefox" t)))
+;;--------------------keybinding-end--------------------

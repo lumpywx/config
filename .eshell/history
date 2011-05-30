@@ -1,0 +1,82 @@
+exit
+ls
+./fork
+ls
+./htoi 
+./htoi
+./htoi
+./htoi
+./htoi
+./htoi
+./htoi
+./htoi
+./htoi
+./htoi
+exit
+exit
+./maze_queue
+(0, 0)
+ls
+exit
+perl match_var.pl
+perl match_var.pl
+perl match_var.pl
+perl match_var.pl
+perl match_var.pl
+perl match_var.pl
+exit
+ls
+../am jumptest.s 
+ls
+./jumptest 
+echo $?
+ls
+objdump -D jumptest 
+objdump -d jumptest 
+ls
+cd ..
+ls
+cp am cam
+ls
+ee cam
+em cam
+cd 5th/
+ls
+../cam calltest.s 
+ls
+./calltest 
+ls
+../am cmptest.s 
+../am cmptest.s 
+../am cmptest.s 
+./cmptest 
+echo $?
+../am paritytest.s 
+echo $?
+../am paritytest.s
+./paritytest 
+echo $?
+../am paritytest.s
+./paritytest 
+echo $?
+../cam signtest.s 
+../cam signtest.s 
+../cam signtest.s 
+./signtest 
+../cam signtest.s 
+./signtest 
+../cam loop.s 
+../cam loop.s 
+./loop 
+../cam loop.s 
+./loop 
+./loop 
+../cam loop.s 
+./loop 
+../cam ifthen.s 
+../cam ifthen.s 
+../cam ifthen.s 
+../cam ifthen.s 
+../cam ifthen.s 
+../cam ifthen.s 
+../cam ifthen.s 
