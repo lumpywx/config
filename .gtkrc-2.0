@@ -1,0 +1,5 @@
+gtk-can-change-accels = 1
+gtk-theme-name = "Clearlooks"
+gtk-font-name = "Sans 9"
+gtk-icon-theme-name = "Tango"
+#gtk-icon-theme-name="oxygen" 
