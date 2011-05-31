@@ -26,12 +26,35 @@ not interrupted, but return a nil"
         (setq result nil))))
      args)
     result))
+;;jump-or-exec-by-class
+(defun get-window-by-class (regexp)
+  (let ((win
+	 (catch 'win
+	   (mapcar
+	    (lambda (win)
+	      (when (and (window-class win)
+			 (string-match regexp (window-class win)))
+		(throw 'win win)))
+	    (managed-windows)))))
+    (if (windowp win) win nil)))
+
+(defun jump-or-exec-by-class (regexp process)
+  "jump to a window whose `window-class' matched by REGEXP, or
+start PRCOCESS otherwise. PRCOCESS could be a function or a
+string commmand."
+  (let ((win (get-window-by-class regexp)))
+    (if (windowp win)
+        (display-window win)
+      (if (functionp process)
+          (funcall process)
+        (system (concat process "&"))))))
 ;;--------------------func-end--------------------
 
 
 ;;--------------------autostart--------------------
 (define wzlxx-startup-programs
   '(("feh" "--bg-scale" "/home/lumpy/picture/bg.png")
+	("tint2")
     ("/home/lumpy/.yong/yong" "-d")))
  
 
@@ -48,11 +71,9 @@ not interrupted, but return a nil"
 (when (require-try 'jump-or-exec)
   (bind-keys global-keymap
 	     "W-TAB"          'cycle-windows
-	     "C-TAB"          'cycle-windows-backwards
-	     "C-W-e"          'display-errors
 	     "C-Super-r"      'restart
 	     "Super-Shift-q"  'quit
-	     "Super-w"        'popup-window-menu
+	     "Super-w"        '(lambda () (jump-or-exec-by-class "Thunar" "thunar"))
 	     "Super-l"        '(wzlxx-run "slock &")
    	     "Super-Up"       '(wzlxx-run "/home/lumpy/.config/awesome/bin/moc &")
 	     "Super-Down"     '(wzlxx-run "mocp -t n &")
@@ -60,5 +81,5 @@ not interrupted, but return a nil"
 	     "Super-Right"    '(wzlxx-run "mocp -f &")
 	     "Super-Return"   '(wzlxx-run "/home/lumpy/.bin/rxvt &")
 	     "Super-e"	      '(wzlxx-run "emacsclient -nc -a '' &")
-	     "Super-q" `(jump-or-exec "Firefox$" "firefox" t)))
+	     "Super-q" `(lambda () (jump-or-exec-by-class "Firefox" "firefox"))))
 ;;--------------------keybinding-end--------------------

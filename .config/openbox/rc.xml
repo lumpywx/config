@@ -216,44 +216,9 @@ and back in -->
       <action name="NextWindow"/>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>~/.bin/rxvt</command>
-      </action>
-    </keybind>
-    <keybind key="W-e">
-      <action name="Execute">
-        <command>emacsclient -nc -a ""</command>
-      </action>
-    </keybind>
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>xterm</command>
-      </action>
-    </keybind>
-    <keybind key="W-w">
-      <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
-    <keybind key="W-q">
-      <action name="Execute">
-        <command>firefox</command>
-      </action>
-    </keybind>
     <keybind key="W-C-l">
       <action name="Execute">
         <command>slock</command>
-      </action>
-    </keybind>
-    <keybind key="W-C-Delete">
-      <action name="Execute">
-        <command>~/.bin/rxvt -e htop</command>
-      </action>
-    </keybind>
-    <keybind key="W-C-End">
-      <action name="Execute">
-        <command>xkill</command>
       </action>
     </keybind>
     <keybind key="W-S-q">

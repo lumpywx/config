@@ -54920,10 +54920,12 @@ zzzz 自自在在
 ;; ；
 date $yyyy年$mon月$day日 $YYYY0年$MON月$DAY日 农历$RIQI
 time $hour点$min分 $HOUR点$MIN分
-线程
-呜呜
-补全
-假相
-等会
-老是
-镜像
+xmig 线程
+wuwu 呜呜
+buqt 补全
+jxxl 假相
+dghv 等会
+lcui 老是
+jkxl 镜像
+fwxb 飞信
+wwbo 微博
