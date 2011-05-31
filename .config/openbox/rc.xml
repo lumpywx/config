@@ -216,11 +216,6 @@ and back in -->
       <action name="NextWindow"/>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-C-l">
-      <action name="Execute">
-        <command>slock</command>
-      </action>
-    </keybind>
     <keybind key="W-S-q">
       <action name="Execute">
         <command>openbox --exit</command>
@@ -229,36 +224,6 @@ and back in -->
     <keybind key="W-C-r">
       <action name="Execute">
         <command>openbox --reconfigure</command>
-      </action>
-    </keybind>
-    <keybind key="Print">
-      <action name="Execute">
-        <command>scrot -u -e 'mv $f ~/picture/shot/'</command>
-      </action>
-    </keybind>
-    <keybind key="W-Print">
-      <action name="Execute">
-        <command>scrot -s -e 'mv $f ~/picture/shot/'</command>
-      </action>
-    </keybind>
-    <keybind key="W-Left">
-      <action name="Execute">
-        <command>mocp -G</command>
-      </action>
-    </keybind>
-    <keybind key="W-Right">
-      <action name="Execute">
-        <command>mocp -f</command>
-      </action>
-    </keybind>
-    <keybind key="W-Up">
-      <action name="Execute">
-        <command>~/.bin/moc</command>
-      </action>
-    </keybind>
-    <keybind key="W-Down">
-      <action name="Execute">
-        <command>mocp -t n</command>
       </action>
     </keybind>
   </keyboard>
