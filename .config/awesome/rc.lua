@@ -176,29 +176,6 @@ globalkeys = awful.util.table.join(
 				   awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
 				   awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
 				   awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
-				   
-				   -- Private global keys
-				   awful.key({ modkey,		  }, "q",     function () awful.util.spawn("firefox") end),
-				   awful.key({ modkey,		  }, "w",     function () awful.util.spawn("thunar") end),
-				   awful.key({ modkey,		  }, "e",     function () awful.util.spawn("emacsclient -nc -a \"\"") end),
-				   awful.key({ modkey, "Control"  }, "l",     function () awful.util.spawn("slock") end),
-				   awful.key({ modkey,            }, "i",     function () awful.util.spawn("xterm") end),
-				   awful.key({ modkey,            }, "p",     function () 
-										 awful.util.spawn(awful.util.getdir("config") .. "/bin/moc_file") end),
-				   awful.key({}, "Print",
-					     function ()
-						awful.util.spawn("scrot -u -e 'mv $f ~/picture/shot/'")  end),				   
-				   awful.key({ modkey,          }, "Print",
-					     function ()
-						os.execute("sleep 0.5")
-						awful.util.spawn("scrot -sb -e 'mv $f ~/picture/shot/'")  end),				   
-				   awful.key({ modkey,           }, "Left",   function () awful.util.spawn("mocp -G") end),
-				   awful.key({ modkey,           }, "Right",   function () awful.util.spawn("mocp -f") end),
-				   awful.key({ modkey,           }, "Up",   function () 
-									       awful.util.spawn(awful.util.getdir("config") .. "/bin/moc") end),
-				   awful.key({ modkey,           }, "Down",   function () awful.util.spawn("mocp -t n") end),
-				   
-				   -- Prompt
 				   awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end)
 				)
 
@@ -315,4 +292,5 @@ function run_once(prg)
 end
 
 run_once("/home/lumpy/.yong/yong -d");
+run_once("xbindkeys");
 -- }}}

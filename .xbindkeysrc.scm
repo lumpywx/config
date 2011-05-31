@@ -2,8 +2,7 @@
 
 (define (first-binding)
   (xbindkey-function '(Control semicolon) prefix-key)
-  (xbindkey '(Mod4 Return) "~/.bin/rxvt")
-  (xbindkey '(Mod4 i) "xterm")
+  (xbindkey '(Mod4 Return) "xterm")
   (xbindkey '(Control Mod4 l) "slock")
   (xbindkey '(Print) "scrot -u -e 'mv $f ~/picture/shot/'")
   (xbindkey '(Mod4 Print) "scrot -s -e 'mv $f ~/picture/shot/'")
