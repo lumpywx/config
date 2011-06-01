@@ -24,11 +24,11 @@
   (remove-all-keys)
   (xbindkey-function 'u
 		     (lambda ()
-		       (run-command "wmctrl -xa URxvt || ~/.bin/rxvt -e screen")
+		       (run-command "wmctrl -xa URxvt || ~/.bin/rxvt")
 		       (reset-first-binding)))
   (xbindkey-function 'e
 		     (lambda ()
-		       (run-command "wmctrl -xa Emacs || emacsclient -c -n")
+		       (run-command "wmctrl -xa Emacs || emacsclient -nc")
 		       (reset-first-binding)))
   (xbindkey-function 'q
 		     (lambda ()

@@ -1,0 +1,57 @@
+(setq load-path (cons "~/.sawfish/extensions" load-path))
+(require 'iswitch-window)
+(require 'jump-or-exec)
+(system "~/.bin/startup.pl &")
+;;--------------------functions--------------------
+(defun lumpy-toggle-show-hide-desktop ()
+  "Toggle showing or hiding desktop."
+  (interactive)
+  (if (showing-desktop-p)
+      (hide-desktop)
+    (show-desktop)))
+(defun lumpy-jump-or-exec-by-class (regexp process)
+  "jump to a window whose `window-class' matched by REGEXP, or
+start PRCOCESS otherwise. PRCOCESS could be a function or a
+string commmand."
+  (let ((win
+         (catch 'win
+           (mapcar
+            (lambda (win)
+              (when (and (window-class win)
+                         (string-match regexp (window-class win)))
+                (throw 'win win)))
+            (managed-windows)))))
+    (if (windowp win)
+        (display-window win)
+      (if (functionp process)
+          (funcall process)
+        (system (concat process "&"))))))
+;;--------------------functions-end--------------------
+
+;;--------------------keybinding--------------------
+(bind-keys global-keymap
+	   "Super-TAB"      'cycle-windows 
+	   "Super-s"	    'iswitch-window
+	   "Super-d"        'lumpy-toggle-show-hide-desktop
+	   "C-Super-r"      'restart
+	   "Super-Shift-q"  'quit
+	   "Super-Shift-c"  '(delete-window-safely (current-event-window))
+	   "Super-n"	    '(iconify-window (current-event-window))
+	   "Super-f"	    '(maximize-window-fullscreen-toggle
+			      (current-event-window))
+	   "Super-m"	    '(maximize-window-toggle
+			      (current-event-window))
+	   "Super-Return"   '(system "xterm&")
+	   "C-Super-l"      '(system "slock&")
+	   "Super-Left"     '(system "mocp -G")
+	   "Super-Right"    '(system "mocp -f")
+	   "Super-Up"       '(system "~/.bin/moc&")
+	   "Super-Down"     '(system "mocp -t n")
+	   "Print"          '(system "scrot -u -e 'mv $f ~/picture/shot/'")
+	   "Super-Print"    '(system "scrot -s -e 'mv $f ~/picture/shot/'")
+	   "Super-u"        '(lumpy-jump-or-exec-by-class "URxvt" "~/.bin/rxvt")
+	   "Super-e"        '(lumpy-jump-or-exec-by-class "Emacs" "emacsclient -nc")
+	   "Super-w"        '(lumpy-jump-or-exec-by-class "Thunar" "thunar")
+	   "Super-q"        '(lumpy-jump-or-exec-by-class "Firefox" "firefox")
+)
+;;--------------------keybinding-end--------------------

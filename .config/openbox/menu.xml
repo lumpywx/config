@@ -32,13 +32,6 @@
 		</item>
 	</menu>
 	<menu id="apps-net-menu" label="Internet">
-		<item label="pidgin">
-			<action name="Execute">
-				<execute>
-	  /usr/bin/pidgin
-				</execute>
-			</action>
-		</item>
 		<item label="firefox">
 			<action name="Execute">
 				<command>
@@ -75,10 +68,10 @@
 				</startupnotify>
 			</action>
 		</item>
-		<item label="gpicview">
+		<item label="gqview">
 			<action name="Execute">
 				<execute>
-					/usr/bin/gpicview
+					/usr/bin/gqview
 				</execute>
 			</action>
 		</item>

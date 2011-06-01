@@ -1,0 +1,17 @@
+Operational
+
+This theme is based on the KDE "Operational" theme, by Juliano 
+Soares dos Santos (juliano@eps.ufsc.br)
+
+Features:
+- Highly customizable look&feel. In particular it lets you choose 
+  the layout of the buttons on the window titlebar.
+- Can show the application icon in the titlebar like Windows or
+  KDE. This will look best if sawfish is compiled with gdk-pixbuf 
+  istead of Imlib.
+
+A .gtkrc.mine is included - just copy it to your home dir to get
+matching colors in Gnome/GTK. Enjoy!
+
+Created by Pedro Lopes
+paol@teleweb.pt

@@ -37,8 +37,8 @@ map <F2>   <Esc><S-$>a<TAB>/* */<Esc>2ha
 ab email /*wzlxx.c@gmail.com*/
 "代码折叠
 set fdm=syntax
-set foldmethod=indent
-set foldlevel=3
+"set foldmethod=indent
+"set foldlevel=3
 ""script
 function Script(arg)
 	if a:arg==1

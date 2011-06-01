@@ -22,6 +22,8 @@ alias chown='chown -v'
 alias ee='emacsclient -t "$@" -a ""'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias ex='emacsclient -nc "$@" -a ""'
+alias et='emacsclient -t "$@" -a ""'
 
 #screen
 case $TERM in

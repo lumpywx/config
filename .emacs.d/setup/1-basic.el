@@ -10,7 +10,7 @@
 ;;关闭启动时的界面
 (setq inhibit-startup-message t)
 ;;menu tool scroll
-;(menu-bar-mode -1)
+(menu-bar-mode -1)
 (tool-bar-mode -1)
 ;(scroll-bar-mode -1)
 ;;光标不闪

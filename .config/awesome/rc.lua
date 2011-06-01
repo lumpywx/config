@@ -284,13 +284,5 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 -- }}}
 
 -- {{{autorun programs
-function run_once(prg)
-   if not prg then
-      do return nil end
-   end
-   awful.util.spawn_with_shell("pgrep -u $USER -x " .. prg .. " || (" .. prg .. ")")
-end
-
-run_once("/home/lumpy/.yong/yong -d");
-run_once("xbindkeys");
+awful.util.spawn_with_shell("/home/lumpy/.bin/startup.pl");
 -- }}}

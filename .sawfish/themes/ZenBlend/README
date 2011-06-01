@@ -1,0 +1,16 @@
+A simplicity theme, created by a modification of Nico Kaiser's
+<http://siriux.net/> BlueCurve-Prion theme.  This theme was heavily
+influenced by heylove's Infinite Simplicity Win XP theme
+(http://www.deviantart.com/view/3537605/).  This is almost a clone of
+that theme, actually.
+
+The theme looks good with rxvt's started with this line:
+
+alias rxvt='rxvt -vb -ls -bg "#f6f6f6" -vb -ls -cr "#a0a0a0" -fg "#a0a0a0" -C -fn 9x15 -sl 90000 +sb &'
+
+It also fits well with the Industrial gnome control set.
+
+And last, but not least, the Infinite Simplicity winamp theme by heylove:
+http://www.deviantart.com/deviation/3537860/
+
+-- Rogan Creswick <http://digitalmagi.org/~rogue/>

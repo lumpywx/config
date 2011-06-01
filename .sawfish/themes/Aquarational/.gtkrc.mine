@@ -1,0 +1,21 @@
+style "default"
+{
+  fg[NORMAL]		= "#262424"	# normal fg
+  bg[NORMAL]		= "#CEC7C6"	# normal bg
+
+  fg[ACTIVE]		= "#262424"	# selected widget fg
+  bg[ACTIVE]		= "#999594"	# selected widget bg
+
+  fg[INSENSITIVE]	= "#817F7F"	# disabled widget fg 
+  bg[INSENSITIVE]	= "#C1BBBB"	# disabled widget bg
+
+  fg[PRELIGHT]		= "#262424"	# mouse-over highlight fg
+  bg[PRELIGHT]		= "#D8D3D2"	# mouse-over highlight bg
+
+  fg[SELECTED]		= "#EFECEB"	# selection fg
+  bg[SELECTED]		= "#991510"	# selection bg
+
+  base[NORMAL]		= "#EFECEB"	# list bg
+  base[ACTIVE]		= "#D8D3D2"	# list separator
+}
+class "*" style "default"

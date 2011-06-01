@@ -1,6 +1,11 @@
 ;; Sawfish user customization -- do not edit by hand!
 ;; Use the configurator instead.
-;; sawfish version 1.8.1, written Mon May 30 23:50:50 2011
+;; sawfish version 1.8.1, written Wed Jun  1 12:27:21 2011
 
-(custom-set-typed-variable (quote default-frame-style) (quote microGUI) (quote frame-style))
+(custom-set-typed-variable (quote resize-outline-mode) (quote opaque) (quote (choice opaque box cross elliptical draft)))
+(custom-set-typed-variable (quote move-outline-mode) (quote opaque) (quote (choice opaque box cross elliptical draft)))
+(custom-set-typed-variable (quote default-window-animator) (quote none) (quote (choice none solid wireframe cross elliptical draft)))
+(custom-set-typed-variable (quote use-custom-font-color) (quote ()) (quote boolean))
+(custom-set-typed-variable (quote default-frame-style) (quote Aquaified) (quote frame-style))
+(custom-set-typed-variable (quote default-font) (quote ("Xft" . "Monospace-11")) (quote font))
 (custom-set-typed-variable (quote workspace-names) (quote ("dev" "www" "fun" "etc")) (quote (list string "Workspace names")))

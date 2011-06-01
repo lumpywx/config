@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<DIRECTORY>
+  <FILE NAME=".xvpics" ICON_POSITION="48,8"/>
+  <FILE NAME="close_button.png" ICON_POSITION="206,33"/>
+  <FILE NAME="close_button_clicked.png" ICON_POSITION="351,33"/>
+  <FILE NAME="close_button_over.png" ICON_POSITION="496,33"/>
+  <FILE NAME="horizontal_border.png" ICON_POSITION="45,130"/>
+  <FILE NAME="horizontal_border2.png" ICON_POSITION="190,130"/>
+  <FILE NAME="inact_button.png" ICON_POSITION="351,108"/>
+  <FILE NAME="max_button.png" ICON_POSITION="497,108"/>
+  <FILE NAME="max_button_clicked.png" ICON_POSITION="62,169"/>
+  <FILE NAME="max_button_over.png" ICON_POSITION="207,169"/>
+  <FILE NAME="menu_button2.png" ICON_POSITION="355,169"/>
+  <FILE NAME="menu_button.png" ICON_POSITION="500,169"/>
+  <FILE NAME="menu_button_clicked.png" ICON_POSITION="65,230"/>
+  <FILE NAME="menu_button_over.png" ICON_POSITION="210,230"/>
+  <FILE NAME="min_button.png" ICON_POSITION="351,230"/>
+  <FILE NAME="min_button_clicked.png" ICON_POSITION="496,230"/>
+  <FILE NAME="min_button_over.png" ICON_POSITION="61,330"/>
+  <FILE NAME="README" ICON_POSITION="193,305"/>
+  <FILE NAME="resize_tab.png" ICON_POSITION="356,339"/>
+  <FILE NAME="theme.jl" ICON_POSITION="483,305"/>
+  <FILE NAME="title.png" ICON_POSITION="36,391"/>
+  <FILE NAME="title2.png" ICON_POSITION="192,391"/>
+  <FILE NAME="top_left_corner.png" ICON_POSITION="358,391"/>
+  <FILE NAME="top_left_corner2.png" ICON_POSITION="503,391"/>
+  <FILE NAME="top_right_corner.png" ICON_POSITION="68,483"/>
+  <FILE NAME="top_right_corner2.png" ICON_POSITION="213,483"/>
+  <FILE NAME="vertical_border.png" ICON_POSITION="362,452"/>
+  <FILE NAME="vertical_border2.png" ICON_POSITION="507,452"/>
+  <FILE NAME="link to top_right_corner.png" ICON_POSITION="68,483"/>
+  <FILE NAME=".nautilus-metafile.xml" ICON_POSITION="48,545"/>
+</DIRECTORY>

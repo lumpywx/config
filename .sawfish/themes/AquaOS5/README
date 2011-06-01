@@ -1,0 +1,14 @@
+MacOS X mockup theme - based loosely on the screenshot in 
+apple website.
+
+Based on tigert's AquaOS theme for Gtk+,
+which is itself based on the Marathon config files.
+Based on Tuomas's AquaOS4 theme for sawfish.
+
+Created by Anthony Lee 
+Anthony Lee site is located at http://savageranthony.myetang.com/
+
+theme.jl:
+ fixed a bug where transient title still had space.
+ moved the buttons to the left of title.
+ added icon for application.

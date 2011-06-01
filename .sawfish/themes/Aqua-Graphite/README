@@ -1,0 +1,17 @@
+Aqua-Graphite by Overlord 
+(overlord@overlordsdimension.net) - 1/28/2001
+
+I decided to make an Aqua-Graphite theme after using the 
+AquaGraphite gtk theme for so long. This theme does not 
+have the original Aqua titlebar look, and it matches the 
+AquaGraphite gtk theme by joeFeFiFo@wiredworks.com
+
+This theme is based on Aquarius by Rami Valta 
+(rami.valta@pp.inet.fi). The functionality is the same as 
+Aquarius and that was my intention. Enjoy!
+
+- UPDATE 2/19/2001 -
+Cleaned up the pixmaps, they had a an extra line of pixels 
+that made the title bar look wierd on dark backgrounds. This
+was a quick fix, and I feel it is needed because not everyone
+uses light backgrounds.
