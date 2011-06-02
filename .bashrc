@@ -24,6 +24,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ex='emacsclient -nc "$@" -a ""'
 alias et='emacsclient -t "$@" -a ""'
+alias search='grep --color=auto -nr "$@" *'
 
 #screen
 case $TERM in

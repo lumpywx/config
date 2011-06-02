@@ -1,9 +1,0 @@
-AquaX とは MacOS X の GUI である Aqua を sawfish (旧sawmill) テーマに
-したものです.
-AquaX GTK テーマではマッチング制御セットを提供しており, これも利用できます.
-
-注意: 本バージョンでは sawfish-0.31 以降が必要です.
-
-Kevin D. Knerr, Sr. (別名 Barthel aus Pennswald) <ld_barthel@yahoo.com>
-
-v1.0.2,  21-Sep-00 "Falling Leaves"

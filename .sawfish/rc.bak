@@ -2,7 +2,7 @@
 (require 'iswitch-window)
 (require 'jump-or-exec)
 (require 'rep.io.timers)
-(system "~/.script/startup.pl &")
+(system "~/.bin/startup.pl &")
 ;;--------------------functions--------------------
 (defun lumpy-toggle-show-hide-desktop ()
   "Toggle showing or hiding desktop."
@@ -27,6 +27,17 @@ string commmand."
       (if (functionp process)
           (funcall process)
         (system (concat process "&"))))))
+;; display-message-with-timeout
+(defun display-message-with-timeout (message timeout)
+  (display-message message)
+  (make-timer (lambda () (display-message nil)) timeout))
+(defun moc-file-name ()
+  (let
+      ((stream (make-string-output-stream))
+       (process (make-process stream)))
+    (start-process process "mocp" "-Q" "%file")
+    (display-message-with-timeout (get-output-stream-string stream) 1)))
+(moc-file-name)
 ;;--------------------functions-end--------------------
 
 ;;--------------------keybinding--------------------
@@ -36,6 +47,7 @@ string commmand."
 	   "Super-d"        '(lumpy-toggle-show-hide-desktop)
 	   "C-Super-r"      '(restart)
 	   "Super-Shift-q"  '(quit)
+	   "Super-p"        '(moc-file-name)
 	   "Super-Shift-c"  '(delete-window-safely (current-event-window))
 	   "Super-n"	    '(iconify-window (current-event-window))
 	   "Super-f"	    '(maximize-window-fullscreen-toggle

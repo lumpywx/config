@@ -1,3 +1,7 @@
+;;--------------------sawfish--------------------
+(require 'sawfish)
+;;--------------------sawfish-end-------------------
+
 ;;--------------------ibuffer--------------------
 (require 'ibuffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)

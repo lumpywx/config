@@ -12,7 +12,7 @@
 ;;menu tool scroll
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-;(scroll-bar-mode -1)
+(scroll-bar-mode -1)
 ;;光标不闪
 (blink-cursor-mode -1)
 ;;不要生成临时文件
